@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+    />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="h1.css">
+    <title>Hello World! its tyone :)</title>
+</head>
+
+<body>
+    <!--my portion-->
+
+    
+        
+        
+    <div class="row">
+       <div class="col-xs-2">
+            </div>
+        <div class="col-xs-3">
+            <h2>
+                <span>
+                
+            </span>
+            </h2>
+        </div>
+    </div>
+
+    </div>
+    <div class="row pos-middle pos-top">
+        <div class="col-xs-3" id="draw" style="">
+            <!--<img src="watch.png" alt="watch" width="75px;" height="75px" style="padding:10px;">-->
+        </div>
+    </div>
+    <div class="row pos-middle">
+            <canvas id="can"  width="380" height="245"></canvas>
+    </div>
+    
+    <div class="row pos-middle">
+        <div class="col-xs-4 split-box">
+            <h2>
+                <span class="label label-warning">Split:</span>
+            </h2>
+            <p id="splitTime">
+                </p>
+        </div>
+       </div>
+     </div>
+    <div class="row pos-middle">
+        <Button class="btn btn-success col-xs-5 " id="togglestop" type="button" Onclick="start()">Go</button>
+        <Button class="btn btn-info col-xs-5 " type="button" Onclick="resett()">Reset</button>
+        <Button class="btn btn-primary col-xs-5" type="button" Onclick="split()">split</button>
+        <Button class="btn btn-primary col-xs-5" type="button" Onclick="wipe()">clear</button>
+        <!--<div class="dropup col-xs-8">
+            <button class="btn btn-default col-xs-12 btn-md dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+             <span >Settings</span>
+            </button>
+            <ul class=" dropdown-menu" aria-labelledby="dropdownMenu1">
+
+                <li><a href="#" id="mode" Onclick="">Toggle Timer</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="countdown.html" id="mode" Onclick="toggleStopWatch(1)">Toggle Countdown Timer</a></li>
+                <li>
+                    <a href="#"><input type="text" id="timemin" class="inputbox" value="1">Mins</input>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><input type="text" id="timesec" class="inputbox" value="30">Seconds</input>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#" id="mode" Onclick="toggleStopWatch(3)">Interval</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#" id="mode" Onclick="toggleStopWatch(4)">Toggle Dual Clock</a></li>
+                <li>
+                    <a href="#"><input type="text" id="chesstimer1" class="inputbox" value="2">Mins</input>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><input type="text" id="chesstimer2" class="inputbox" value="45">Seconds</input>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>-->
+    
+    
+    <script src="stopwatch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+<!------------my portion-->
+  <script type="text/javascript" src="cordova.js"></script>
+   <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

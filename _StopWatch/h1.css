@@ -1,0 +1,55 @@
+
+.pos-middle{
+	padding-left:40px;
+	font-style:bold;
+	font-size:20px;
+	
+}
+.pos-top{
+	padding-top:55px;
+	font-style:bold;
+	font-size:20px;
+	
+}
+.split-box{
+	/*border:1px solid black;*/
+	height:200px;
+	
+}
+body{
+	background-image:url(Backdrop.jpg);
+}
+.btn{
+	margin:2px;
+	font-size:18px;
+	padding:10px;
+	
+}
+div{
+	margin-left:2px;
+	margin-right:2px;
+	
+}
+.label{
+	width:100px;
+	height:300px;
+	border:2px solid black;
+}
+.inputbox{
+	width:50px;
+}
+.none{
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	height:150px;
+	width:300px;
+	border-radius:20px;
+	background-color:skyblue;
+	border:5px solid;
+	
+	
+}
+.hide{
+	display:none;
+}
